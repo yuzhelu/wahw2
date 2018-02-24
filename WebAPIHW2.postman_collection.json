@@ -1,0 +1,298 @@
+{
+	"info": {
+		"name": "WebAPIHW2",
+		"_postman_id": "11398446-e178-4653-2d91-b86ca1cea780",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://luwahw2.herokuapp.com/posts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "https://luwahw2.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"luwahw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "post\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://luwahw2.herokuapp.com/gets",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "https://luwahw2.herokuapp.com/gets",
+					"protocol": "https",
+					"host": [
+						"luwahw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"gets"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "get"
+			},
+			"response": []
+		},
+		{
+			"name": "https://luwahw2.herokuapp.com/deletes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "https://luwahw2.herokuapp.com/deletes",
+					"protocol": "https",
+					"host": [
+						"luwahw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "deletes"
+			},
+			"response": []
+		},
+		{
+			"name": "https://luwahw2.herokuapp.com/puts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "https://luwahw2.herokuapp.com/puts",
+					"protocol": "https",
+					"host": [
+						"luwahw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"puts"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "put"
+			},
+			"response": []
+		},
+		{
+			"name": "incorrect password",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12342",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "https://luwahw2.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"luwahw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "unauthorized"
+			},
+			"response": []
+		},
+		{
+			"name": "posts to GET",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12342",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "https://luwahw2.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"luwahw2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "errors out"
+			},
+			"response": []
+		}
+	]
+}
