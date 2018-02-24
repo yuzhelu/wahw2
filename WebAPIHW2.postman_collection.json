@@ -293,6 +293,53 @@
 				"description": "errors out"
 			},
 			"response": []
+		},
+		{
+			"name": "Unique key",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "yuzhelu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test echo"
+				},
+				"url": {
+					"raw": "http://localhost:5000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "UNIQUE_KEY",
+							"value": "asdasd",
+							"equals": true,
+							"disabled": true
+						}
+					]
+				},
+				"description": "key"
+			},
+			"response": []
 		}
 	]
 }
